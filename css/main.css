@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background-color:aliceblue; */
+    background-color: #999;
+    text-align: center;
+
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+html{
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Navbar Section */
+#navbar{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0.75rem;
+    height: 70px;
+}
+#navbar ul{
+    list-style-type: none;
+    display: flex;
+    
+}
+#navbar ul li a{
+    padding: 1rem;
+}
+#navbar ul li a:hover{
+    background: #336ea2;
+    border-radius: 4px;
+}
+
+/* Home */
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 2rem;
+}
+#home img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 100%;
+}
+#home .name h2{
+    margin-bottom: 0.75rem;
+}
+#home .name p{
+    opacity: 0.6;
+    font-style: italic;
+}
+
+footer{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #fff;
+}
+
+main {position: relative;} /* to place scrollbar */
+
+.scroll-top {
+  position: absolute; /* relative to its positioned <main> parent */
+  top: 120vh; /* starts below the bottom of the screen */
+  bottom: 3rem; /* stops scrolling before the end */
+  right: 2rem; /* offset from right hand side */
+}
+
+.scroll-top__link {
+  position: -webkit-sticky; /* for Safari */
+  position: sticky; /* 'relative' until element reaches... */
+  top: 90vh; /* 90% viewport height from the top, when it becomes 'fixed' - until its container toggles it back to 'relative' */
+}
+
+/* TABLE */
+.project-table-responsive {
+    max-width: 900px;
+    border: 1px solid #00bcd4;
+    background-color: #efefef33;
+    padding: 15px;
+    overflow: auto;
+    margin: 0 auto 2rem auto;
+    border-radius: 4px;
+}
+
+.project-table {
+    width: 100%;
+    font-size: 13px;
+    color: #444;
+    white-space: nowrap;
+    border-collapse: collapse;
+}
+
+.project-table thead {
+    background-color: #00bcd4;
+    color: #fff;
+}
+
+.project-table thead th {
+    padding: 15px;
+}
+
+.project-table th,
+table td {
+    border: 1px solid #00000017;
+    padding: 10px 15px;
+}
+
+.project-table tbody tr td img {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 2px 6px #0003;
+}
+
+
+.action_btn {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.action_btn a {
+    text-decoration: none;
+    color: #444;
+    background: #fff;
+    border: 1px solid;
+    display: inline-block;
+    padding: 7px 20px;
+    font-weight: bold;
+    border-radius: 3px;
+    transition: 0.3s ease-in-out;
+    border-color: #00bcd4;
+}
+
+.action_btn a:hover {
+    box-shadow: 0 3px 8px #0003;
+}
+
+
+.project-table tbody tr {
+    background-color: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+
+.project-table tbody tr:nth-child(even) {
+    background-color: rgb(238, 238, 238);
+}
+
+.project-table tbody tr:hover{
+    filter: drop-shadow(0px 2px 6px #0002);
+}
+
+/* PAGE-NAVBAR */
+.page-navbar{
+    background-color: #272A35;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0.75rem;
+    height: 70px;
+}
+.page-navbar ul{
+    list-style-type: none;
+    display: flex;
+}
+.page-navbar ul li a{
+    color: #6e7f80;
+    font-size: 1.25rem;
+    padding: 1rem 2rem;
+}
+
+/* LIST */
+.list-type1{
+width: 80%;
+max-width: 500px;
+margin:0 auto;
+}
+
+.list-type1 ol{
+counter-reset: li;
+list-style: none;
+*list-style: decimal;
+font-size: 1.5rem;
+font-family: 'Raleway', sans-serif;
+padding: 0;
+margin-bottom: 4em;
+}
+
+.list-type1 ol ol{
+margin: 0 0 0 2em;
+}
+
+.list-type1 a{
+position: relative;
+display: block;
+padding: .4em .4em .4em 2em;
+/* padding: .4em; */
+margin: .5em 0;
+background: #26a69a;
+color: #444;
+text-decoration: none;
+transition: all .2s ease-in-out;
+}
+
+.list-type1 a:hover{
+background: #d6d4d4;
+text-decoration:none;
+transform: scale(1.1);
+}
+    
+.list-type1 a:before{
+content: counter(li);
+counter-increment: li;
+position: absolute;
+left: -1.3em;
+top: 50%;
+margin-top: -1.3em;
+background:#FC756F;
+height: 2em;
+width: 2em;
+line-height: 2em;
+border: .3em solid #fff;
+text-align: center;
+font-weight: bold;
+color:#FFF;
+}
+
+/* COURSES */
+#courses {
+    color: #333;
+    padding: 1rem;
+}
+
+.courses {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.courses .course {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.courses .course .course-image{
+    margin-right: 0.5rem;
+    margin: 0 0;
+    position: relative;
+    width: 50%;
+}
+
+.courses .course .course-image img{
+    border-radius: 5px;
+}
+.courses .course .course-info .course-title a{
+    letter-spacing: 1.2px;
+    font-weight: 700;
+    color: #111;
+}
+
+.courses .course .courses-info .course-description{
+    opacity: 0.5;
+    font-size: 0,8rem;
+    margin-bottom: 0.25rem;
+}
+
+#projects h3{
+    padding-top: 1rem;
+    padding-bottom: 10px;
+}
+
+.pl-logos{
+    padding: 100px 0;
+}
+

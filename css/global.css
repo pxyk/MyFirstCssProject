@@ -1,0 +1,224 @@
+/* Text */
+
+.text-center {
+    text-align: center;
+}
+
+.heading-small {
+    font-size: 1.25rem;
+}
+.heading-medium {
+    font-size: 1.5rem;
+}
+.heading-big {
+    font-size: 1.75rem;
+}
+
+/* Buttons */
+.btn{
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    padding: 0.8rem 3rem;
+    border-radius: 7px;
+    letter-spacing: 0.5px;
+}
+.btn-primary{
+    background: #336ea2;
+}
+.btn-primary:hover{
+    color: #336ea2;
+    background: #fff;
+    border: 0.5px solid #336ea2;
+}
+.btn-dark{
+    background: #333;
+}
+.btn-dark:hover{
+    color: #333;
+    background: #fff;
+    border: 0.5px solid #333;
+} 
+
+.btn-block{
+    text-align: center;
+    width: 100%;
+}
+
+/* colors */
+
+.bg-dark-blue {
+    background: #062e51;
+}
+.bg-light-blue {
+    background: #336ea2;
+}
+.bg-grey {
+    background: #36454f;
+}
+.bg-black111{
+    background: #111;
+}
+.text-color-1{
+    color:#6e7f80;
+}
+.text-color-2{
+    color:#536872;
+}
+.text-color-3{
+    color:#708090;
+}
+.text-color-4{
+    color:#536878;
+}
+.text-color-5{
+    color:#36454f;
+}
+
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#up-long{
+    color: #111;
+}
+
+/*
+.html5{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.html5 img{
+    float: left;
+    margin-right: 1rem;
+}
+
+.html5{
+    width: 70%;
+    height: 1000px;
+    border: 1px solid black;
+    overflow: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+*/
+
+/* Footer */
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.footer-content ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.footer-content ul li{
+    margin: 0 10px;
+}
+.footer-content ul a{
+    text-decoration: none;
+    color: #fff;
+}
+.footer-content ul a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+.footer-content ul a:hover i{
+    color: aqua;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+/* Icon Grow And Spin */
+.grow{
+    transition: all .2s ease-in-out;
+}
+.grow:hover{
+    transform: scale(1.5) ;
+}
+
+.hvr-icon-grow-spin {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+}
+.hvr-icon-grow-spin .hvr-icon {
+  -webkit-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+.hvr-icon-grow-spin:hover .hvr-icon, .hvr-icon-grow-spin:focus .hvr-icon, .hvr-icon-grow-spin:active .hvr-icon {
+  -webkit-transform: scale(2) rotate(360deg);
+  transform: scale(2) rotate(360deg);
+}
+
+/* Gallery */
+.projects-table div{
+    /* width: 30%; */
+    padding: 10px 5px;
+    flex-basis: 30%;
+}
+.projects-table{
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Contact */
+.form-group label{
+    display: block;
+}
+.form-group{
+    padding: 0.25rem 0;
+}
+.form-control{
+    width: 30%;
+    padding: 0.4rem;
+    font-size: 1rem;
+    resize: none;
+    border-radius: 5px;
+}
